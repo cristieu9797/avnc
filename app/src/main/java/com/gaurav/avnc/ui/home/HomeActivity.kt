@@ -81,7 +81,6 @@ class HomeActivity : AppCompatActivity() {
         when (itemId) {
             R.id.settings -> showSettings()
             R.id.about -> showAbout()
-            R.id.report_bug -> launchBugReport()
             else -> return false
         }
         binding.drawerLayout.close()
@@ -113,8 +112,8 @@ class HomeActivity : AppCompatActivity() {
      * Launches VNC Url activity
      */
     private fun showUrlActivity() {
-        val anim = ActivityOptions.makeSceneTransitionAnimation(this, binding.urlbar, "urlbar")
-        startActivity(Intent(this, UrlBarActivity::class.java), anim.toBundle())
+//        val anim = ActivityOptions.makeSceneTransitionAnimation(this, binding.urlbar, "urlbar")
+//        startActivity(Intent(this, UrlBarActivity::class.java), anim.toBundle())
     }
 
     /**

@@ -11,6 +11,7 @@ package com.gaurav.avnc.ui.home
 import android.app.Dialog
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -65,6 +66,7 @@ class ProfileEditorFragment : DialogFragment() {
     }
 
     private fun saveProfile() {
+        Log.e("TAGDEBUG", "saveProfile: " + profile.toString() )
         if (profile.ID == 0L)
             viewModel.insertProfile(profile)
         else

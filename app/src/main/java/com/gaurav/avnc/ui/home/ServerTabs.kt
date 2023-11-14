@@ -222,12 +222,12 @@ class ServerTabs(val activity: HomeActivity) {
         init {
             rootView.setOnClickListener { homeViewModel.startConnection(profile) }
 
-            rootView.setOnCreateContextMenuListener { contextMenu, view, _ ->
-                MenuInflater(view.context).inflate(contextMenuId, contextMenu)
-                contextMenu.forEach { item ->
-                    item.setOnMenuItemClickListener { onContextMenuItemClick(it) }
-                }
-            }
+//            rootView.setOnCreateContextMenuListener { contextMenu, view, _ ->
+//                MenuInflater(view.context).inflate(contextMenuId, contextMenu)
+//                contextMenu.forEach { item ->
+//                    item.setOnMenuItemClickListener { onContextMenuItemClick(it) }
+//                }
+//            }
         }
 
         private fun onContextMenuItemClick(item: MenuItem): Boolean {

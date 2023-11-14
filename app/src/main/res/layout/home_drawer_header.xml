@@ -15,12 +15,12 @@
         android:layout_height="match_parent"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_launcher_background" />
+        android:src="@color/ic_launcher_background" />
 
     <ImageView
         android:layout_width="160dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal|bottom"
         android:importantForAccessibility="no"
-        android:src="@drawable/ic_wordmark" />
+        android:src="@mipmap/ic_launcher" />
 </FrameLayout>
