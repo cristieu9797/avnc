@@ -75,7 +75,7 @@ class HomeViewModel(app: Application) : BaseViewModel(app) {
 
     fun startDiscovery() {
         autoStopped = false
-        discovery.start(app)
+//        discovery.start(app)
     }
 
     fun stopDiscovery() {

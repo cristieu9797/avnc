@@ -38,14 +38,5 @@
             app:isVisible="@{viewModel.serverProfiles.empty}"
             tools:visibility="visible" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            style="@style/Widget.MaterialComponents.FloatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/margin_normal"
-            android:contentDescription="@string/desc_add_new_server_btn"
-            android:onClick="@{()-> viewModel.onNewProfile()}"
-            android:src="@drawable/ic_plus" />
     </FrameLayout>
 </layout>
