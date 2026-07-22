@@ -93,7 +93,7 @@ class HomeActivity : AppCompatActivity() {
     private fun onMenuItemSelected(itemId: Int): Boolean {
         when (itemId) {
             R.id.settings -> showSettings()
-            R.id.about -> showAbout()
+//            R.id.about -> showAbout()
             else -> return false
         }
         binding.drawerLayout.close()
